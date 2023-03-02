@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'data-binding-app';
+  count:number = 0;
+  counter:number = 0; 
+  hidden:boolean = true;
+
+  onClick(){
+    this.count++;
+  }
+
+  onDoubleClick()
+  {
+    if(this.hidden == true)
+    {
+      this.hidden = false;
+    }
+    else{
+      this.hidden = true;
+  }
+
+}
 }
